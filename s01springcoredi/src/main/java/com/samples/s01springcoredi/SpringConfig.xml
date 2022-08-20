@@ -8,12 +8,15 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean name="emp" class="com.samples.s01springcoredi.Employee">
-		<property name="id">
-			<value>23</value>		
+	<bean name="emp" class="com.samples.s01springcoredi.Employee" p:id="22" p:name="harsha"/>
+	
+	<bean name="hospital" class="com.samples.s01springcoredi.Hospital">
+		<property name="name" value="Global Hospitals" />
+		<property name="departments">
+			<value>Casualty</value>
 		</property>
-		<property name="name">
-			<value>John</value>		
-		</property>
+	
+	
+	
 	</bean>
 </beans>
