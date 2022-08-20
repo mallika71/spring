@@ -1,13 +1,16 @@
 package com.samples.s01springcoredi;
 
-/**
- * Hello world!
- *
- */
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+       
+    	ClassPathXmlApplicationContext springContainer = new ClassPathXmlApplicationContext("com/samples/s01springcoredi/SpringConfig.xml");
+       
+       Employee emp = (Employee) springContainer.getBean("emp"); 
+       System.out.println(emp);
     }
 }
