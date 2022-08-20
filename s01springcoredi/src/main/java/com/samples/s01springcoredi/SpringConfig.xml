@@ -15,8 +15,34 @@
 		<property name="departments">
 			<value>Casualty</value>
 		</property>
+	</bean>
+		
+		<bean name="CD" class="com.samples.s01springcoredi.carDealer">
+		<property name="name" value="ABC Motors" />
+		<property name="models">
+		<set>
+			<value>Hyundai</value>
+	        <value>Tyota</value>
+			<value>BMW</value>
+			
+		</set>
+		</property>
 	
+	</bean>
 	
+	<bean name="Cus" class="com.samples.s01springcoredi.Customer" p:id="37">
+		<property name="products">
+		<map>
+			<entry key="100" value="Iphone" />
+			<entry key="200" value="Laptop" />
+			<entry key="300" value="Mobile" />
+			<entry key="400" value="Mouse" />
+			<entry key="500" value="Keyboard" />
+					
+			
+			
+		</map>
+		</property>
 	
 	</bean>
 </beans>

@@ -13,7 +13,15 @@ public class App
      //  Employee emp = (Employee) springContainer.getBean("emp"); 
       // System.out.println(emp);
     	
-    	Hospital hospital = (Hospital) springContainer.getBean("hospital"); 
-        System.out.println(hospital);
+   //Hospital hospital = (Hospital) springContainer.getBean("hospital"); 
+     //   System.out.println(hospital);
+    
+    	// carDealer CD = (carDealer) springContainer.getBean("CD"); 
+      //   System.out.println(CD);
+    	
+    	Customer Cus = (Customer) springContainer.getBean("Cus"); 
+        System.out.println(Cus);
+      	
+       	
     }
 }
